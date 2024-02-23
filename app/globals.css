@@ -1,0 +1,33 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+ */
+:root {
+  --bgDark: #0d0c22;
+  --bgSoft: #2d2b42;
+  --textColor: white;
+  --textSoft: #e5e5e5;
+  --btnColor: #3673fd;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bgDark);
+  color: var(--textColor);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0px 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

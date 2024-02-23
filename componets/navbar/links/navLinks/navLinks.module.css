@@ -1,0 +1,10 @@
+.container {
+  padding: 10px;
+}
+
+.active {
+  background-color: aliceblue;
+  color: black;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
