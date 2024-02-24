@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+h1 {
+  font-size: 96px;
+}
+p {
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.imgContainer {
+  position: relative;
+  aspect-ratio: 1;
+  flex: 1;
+}
+.brands {
+  position: relative;
+  width: 500px;
+  height: 50px;
+  filter: grayscale(1);
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.buttons button {
+  padding: 15px;
+}
+.button {
+  background: var(--btnColor);
+  color: var(--textColor);
+}

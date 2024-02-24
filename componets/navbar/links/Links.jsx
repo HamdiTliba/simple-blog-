@@ -33,7 +33,7 @@ const Links = () => {
         {session ? (
           <>
             {isAdmin && <NavLinks item={{ title: "Admin", page: "/admin" }} />}
-            <button>Logout</button>
+            <button className={styles.button}>Logout</button>
           </>
         ) : (
           <button>Login </button>
