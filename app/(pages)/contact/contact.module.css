@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.imgContainer {
+  flex: 1;
+  position: relative;
+  width: 40%;
+  aspect-ratio: 1;
+  padding: 20px;
+}
+.img {
+  object-fit: contain;
+}
+.textContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  gap: 10px;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.forms input,
+textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 3px;
+  background: var(--bgSoft);
+  color: var(--textColor);
+}
+.button {
+  padding: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--btnColor);
+  color: var(--textColor);
+}

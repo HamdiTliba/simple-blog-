@@ -17,6 +17,7 @@
 body {
   background-color: var(--bgDark);
   color: var(--textColor);
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -26,8 +27,8 @@ a {
   max-width: 1440px;
   margin: auto;
   padding: 0px 50px;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100vh;
 }

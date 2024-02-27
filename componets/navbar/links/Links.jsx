@@ -14,12 +14,12 @@ const Links = () => {
       page: "/about",
     },
     {
-      title: "Blog",
-      page: "/blog",
-    },
-    {
       title: "Contact",
       page: "/contact",
+    },
+    {
+      title: "Blog",
+      page: "/blog",
     },
   ];
   const session = true;

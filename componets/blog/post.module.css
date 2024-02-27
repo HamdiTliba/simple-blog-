@@ -1,0 +1,53 @@
+.container,
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px;
+  width: 300px;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.img {
+  object-fit: cover;
+}
+.date {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 7px 0px;
+}
+.desc {
+  font-size: 14px;
+  color: gray;
+}
+.readMore {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  cursor: pointer;
+}
+.readMore:hover {
+  font-weight: bold;
+}

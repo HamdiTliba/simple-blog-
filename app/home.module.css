@@ -23,6 +23,7 @@ p {
   position: relative;
   aspect-ratio: 1;
   flex: 1;
+  object-fit: contain;
 }
 .brands {
   position: relative;
