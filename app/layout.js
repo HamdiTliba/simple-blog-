@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Blog with Framer Motion",
-  description: "Simple Blog made with Framer Motion ",
+  description: "Simple Blog made with Framer Motion and Next js 14 ",
 };
 
 export default function RootLayout({ children }) {

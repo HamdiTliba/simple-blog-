@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  gap: 40px;
+}
+.userDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.h1 {
+  font-size: 24px;
+  color: gray;
+  font-weight: normal;
+}
+.h2 {
+  font-size: 20px;
+}

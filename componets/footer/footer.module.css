@@ -5,6 +5,8 @@
   align-items: center;
   color: gray;
   padding: 10px;
+  height: 100px;
+  gap: 20px;
 }
 .logo {
   font-size: 22px;
