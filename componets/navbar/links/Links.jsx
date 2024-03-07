@@ -2,7 +2,9 @@
 import { useState } from "react";
 import styles from "./link.module.css";
 import NavLinks from "./navLinks/NavLinks";
-const Links = () => {
+import { handleGithubSignOut } from "@/lib/action";
+import Link from "next/link";
+const Links = ({ session }) => {
   const [open, setOpen] = useState(false);
   const links = [
     {
@@ -22,7 +24,6 @@ const Links = () => {
       page: "/blog",
     },
   ];
-  const session = true;
   const isAdmin = true;
   return (
     <div className="link-container">
@@ -30,13 +31,27 @@ const Links = () => {
         {links.map((link) => (
           <NavLinks item={link} key={link.title} />
         ))}
-        {session ? (
+        {session?.user ? (
           <>
-            {isAdmin && <NavLinks item={{ title: "Admin", page: "/admin" }} />}
-            <button className={styles.button}>Logout</button>
+            {session.user?.isAdmin && (
+              <NavLinks item={{ title: "Admin", page: "/admin" }} />
+            )}
+            <form action={handleGithubSignOut}>
+              <button className={styles.button}>Logout</button>
+            </form>
           </>
         ) : (
-          <button>Login </button>
+          <Link
+            href="/login"
+            style={{
+              background: "white",
+              color: "black",
+              padding: "10px",
+              borderRadius: "5px",
+            }}
+          >
+            Login
+          </Link>
         )}
       </div>
 
